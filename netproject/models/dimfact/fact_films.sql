@@ -12,7 +12,6 @@ lien as (
 )
 
 
-
 select
     f.film_id,
     f.user_id,
