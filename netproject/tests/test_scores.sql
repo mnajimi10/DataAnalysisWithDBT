@@ -6,7 +6,7 @@ where score <=0 and
       score_timestamp IS NULL
 
 
--- I could use the macro function if i want to test that a table columns are not null,
+{# -- I could use the macro function if i want to test that a table columns are not null,
 -- like this : 
 -- {{check_valeurs_nulles(ref('dim_films'))}}
 --> This will genrate somthing like this : 
@@ -16,6 +16,6 @@ where score <=0 and
 --    film_id IS NULL
 --    OR titre_de_film IS NULL
 --    OR genre_array IS NULL
---    OR genre IS NULL
+--    OR genre IS NULL #}
 
 
