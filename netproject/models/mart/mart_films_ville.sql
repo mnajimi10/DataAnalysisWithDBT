@@ -22,4 +22,4 @@ from fct_scores f
 left join seed_dates s
 on f.film_id = s.film_id         
 
-
+ 

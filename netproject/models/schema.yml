@@ -1,0 +1,34 @@
+models:
+  - name : dim_films
+    description : La table des films après traitement
+    columns :
+       - name : film_id
+         description : l'identifiant du film
+         tests : 
+            - not_null
+            - unique
+       - name : genre
+         description : le genre du film
+          
+
+  - name : dim_utilisateur
+    description : la table traité des utilisateurs
+    columns : 
+     - name : user_id
+       description : l'identifiant de chaque utilisateur 
+       tests :
+           - not_null
+
+  - name : fact_scores
+    description : la table fact des scores des utilisateurs
+    columns : 
+     - name : score
+       description : le score de chaque utilisateur pour chaque film 
+       tests :
+           - not_null
+     - name : score_timestamp
+       description : la date timestamp du score
+       tests :
+           - not_null    
+        
+
