@@ -19,3 +19,7 @@ jobs:
 
       - name: Build Docker images
         run: docker compose build
+
+      - name: Check Airflow DAG syntax
+        run: |
+          python -m py_compile airflow/dags/*.py  
