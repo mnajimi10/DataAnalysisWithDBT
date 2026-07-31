@@ -5,11 +5,26 @@ from datetime import timedelta
 from datetime import datetime
 
 
+
+def notify_failure(context):
+    print("❌ Pipeline dbt échoué")
+
+
+
+default_args = {
+    "retries": 2,
+    "retry_delay": timedelta(minutes=2),
+    "on_failure_callback": notify_failure
+}
+
+
+
 with DAG(
     dag_id="dbt_movie_pipeline",
     start_date=datetime(2026, 1, 1),
     schedule="@daily",
     catchup=False,
+    default_args=default_args,
     tags=["dbt", "snowflake"],
 ) as dag:
 
