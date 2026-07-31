@@ -37,6 +37,6 @@ jobs:
           SNOWFLAKE_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
           SNOWFLAKE_ROLE: ${{ secrets.SNOWFLAKE_ROLE }}
 
-        run: |
-          cd netproject
-          dbt debug  
+       # run: |
+        working-directory: ./netproject
+        run: dbt debug --profiles-dir ../.dbt  
