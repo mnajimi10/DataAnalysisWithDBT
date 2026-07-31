@@ -11,3 +11,5 @@ airflow_venv/
 airflow/logs/
 logs/
 .dbt/.user.yml
+*.pyc
+airflow/dags/__pycache__/
