@@ -19,7 +19,7 @@ where score is not null
 
 
 {% if is_incremental() %}
-  and score_timestamp > (select max(score_timestamp)) from {{ this }}
+  and score_timestamp > (select max(score_timestamp) from {{ this }})
 
 {% endif %}
 

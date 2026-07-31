@@ -1,0 +1,13 @@
+.env
+.env.*
+netproject/target/
+netproject/dbt_packages/
+netproject/logs/
+netproject/venv/
+netproject/*.log
+venv/
+.venv/
+airflow_venv/
+airflow/logs/
+logs/
+.dbt/.user.yml

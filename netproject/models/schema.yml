@@ -11,7 +11,7 @@ models:
          description : le genre du film
           
 
-  - name : dim_utilisateur
+  - name : dim_utilisateurs
     description : la table traité des utilisateurs
     columns : 
      - name : user_id

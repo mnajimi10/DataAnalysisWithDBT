@@ -6,6 +6,7 @@ This project implements an end-to-end data pipeline for analytics using modern d
 
 The pipeline ingests raw files into Amazon S3, loads them into Snowflake, transforms the data using dbt following the Medallion Architecture (Bronze, Silver, Gold), orchestrates the workflow with Apache Airflow, and visualizes business insights in Power BI.
 
+
 ## Architecture
 
 ```
