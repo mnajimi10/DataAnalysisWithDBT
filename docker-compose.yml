@@ -12,6 +12,9 @@ services:
     
 
   airflow-init:
+
+
+    image: dbt-airflow:latest
      
     build: 
         context: .
@@ -45,6 +48,8 @@ services:
             --email ${AIRFLOW_EMAIL}
 
   airflow-webserver:
+    
+    image: dbt-airflow:latest
 
     build:
         context: .
@@ -75,6 +80,8 @@ services:
 
 
   airflow-scheduler:
+
+    image: dbt-airflow:latest
 
     build:
         context: .
